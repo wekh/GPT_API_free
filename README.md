@@ -4,7 +4,7 @@
 
 免费使用 gpt-5 | deepseek
 
-支持 gpt | deepseek | claude | gemini | grok
+支持 gpt | deepseek | claude | gemini | grok | qwen | kimi | minimax 等
 
 国内动态加速 直连无需代理 协议统一接入便捷
 
@@ -29,14 +29,13 @@
 但OpenAI官方会根据其[数据使用政策](https://platform.openai.com/docs/data-usage-policies)保留 30 天的数据。
 
 ## 特点
-1. 支持 gpt | deepseek | claude | gemini | grok 等排名靠前的常用大模型。
+1. 支持 gpt | deepseek | claude | gemini | grok | qwen 等常用大模型。
 2. 免费版支持gpt-5系列, gpt-4o，gpt-4.1一天5次；支持deepseek-r1, deepseek-v3, deepseek-v3-2-exp一天30次，支持gpt-4o-mini，gpt-3.5-turbo，gpt-4.1-mini，gpt-4.1-nano, gpt-5-mini，gpt-5-nano一天200次。
 3. 与官方完全一致的接口标准，兼容各种软件/插件。
-4. 支持流式响应。
-5. 国内线路使用动态加速，体验远优于使用代理连接官方。
-6. 无需科学上网，国内环境直接可用。
-7. 个人完全免费使用。
-8. 协议统一使用openai标准协议，其他厂商模型仅需更换模型名称，接入便捷
+4. 国内线路使用动态加速，体验远优于使用代理连接官方。
+5. 无需科学上网，国内环境直接可用。
+6. 个人完全免费使用。
+7. 各类模型all-in-one，协议统一使用openai标准协议，其他厂商模型仅需更换模型名称，接入便捷（claude模型支持Anthropic官方协议）
 
 ## 🚩注意事项
 
@@ -60,7 +59,7 @@
 - **转发Host2: `https://api.chatanywhere.org` (国外使用)**
 
 
-我们会定期根据使用量进行相应的扩容，只要不被官方制裁我们会一直提供免费API，如果该项目对你有帮助，还请为我们点一个***Star***。如果遇到问题可以在[Issues](https://github.com/chatanywhere/GPT_API_free/issues)中反馈，有空会解答。
+我们会定期根据使用量进行相应的扩容，一直提供免费API，如果该项目对你有帮助，还请为我们点一个***Star***。如果遇到问题可以在[Issues](https://github.com/chatanywhere/GPT_API_free/issues)中反馈，有空会解答。
 
 该API Key用于转发API，需要将Host改为`api.chatanywhere.tech`(国内首选)或者`api.chatanywhere.org`(国外使用)。
 
@@ -69,17 +68,17 @@
 - [购买付费Key](https://api.chatanywhere.tech/#/shop/)
 - [付费版价格表](https://chatanywhere.apifox.cn/doc-2694962)
 
-1. 支持**更稳定更快速的GPT4 API**，GPT4体验更好，无限使用，价格低于官方，充值更便捷。
-2. 同官网计费策略，流式问答使用tiktoken库准确计算Tokens，非流式问答直接使用官方返回Tokens用量计费。
-3. 余额不会过期，永久有效。根据用户反馈30块钱个人中度使用gpt-4o-mini估计能用半年。
-4. 所有的接口（包括免费版本）都保证转发自OpenAI或Azure官方接口，非peo、plus等不稳定方案或逆向方案，无水分，不掺假，保证稳定性。
+1. 支持**更稳定更快速的API**，无限速，体验更好，价格低于官方，充值便捷。
+2. 同官网计费策略，使用官方返回Tokens用量计费。
+3. 余额不会过期，永久有效。
 
 ## 付费版支持模型
 
 
 | **模型（Model）** | **请求（Input）** | **回答（Output）** | **是否支持** | **特点** |
 | --- | --- | --- | --- | --- |
-| gpt-5.4 | 0.0175 / 1K Tokens [7阶梯计价]| 0.105 / 1K Tokens | 支持 | openai最新推出的面向各行各业的编码和智能体任务的旗舰模型 |
+| gpt-5.5| 0.035 / 1K Tokens [7阶梯计价]| 0.21 / 1K Tokens | 支持 | openai最新的前沿模型，专为处理最复杂的专业工作而设计 |
+| gpt-5.4 | 0.0175 / 1K Tokens [7阶梯计价]| 0.105 / 1K Tokens | 支持 | 用于处理复杂专业工作的前沿模型 |
 | gpt-5.4-mini | 0.00525 / 1K Tokens | 0.0315 / 1K Tokens | 支持 | openai2026年3月17日为止最强大的编码、计算机使用和子代理迷你模型 |
 | gpt-5.4-mini-2026-03-17 | 0.00525 / 1K Tokens | 0.0315 / 1K Tokens | 支持 | openai2026年3月17日为止最强大的编码、计算机使用和子代理迷你模型|
 | gpt-5.4-nano | 0.0014 / 1K Tokens | 0.00875 / 1K Tokens | 支持 | openai最便宜的GPT-5.4级型号，适用于简单的高容量任务 |
@@ -129,6 +128,7 @@
 | gpt-4o-mini | 0.00105/1K Tokens + 图片费用[2]| 0.0042/1K Tokens| 支持 | Openai 最新模型, 价格更低, 输出质量在3.5之上4o之下, 并且支持读图|
 | gpt-4-0613 | 0.21 / 1K Tokens | 0.42 / 1K Tokens | 支持 | 2023年6月13日更新的模型 |
 | gpt-5.4-ca | 0.01 / 1K Tokens [7阶梯计价]| 0.06 / 1K Tokens | 支持 | 第三方优质提供商提供的服务,优点价格便宜,但是稳定性没有非-ca的好, 模型返回和能力都是一样的  |
+| gpt-5.5-ca | 0.02 / 1K Tokens [7阶梯计价]| 0.12 / 1K Tokens | 支持 | 第三方优质提供商提供的服务,优点价格便宜,但是稳定性没有非-ca的好, 模型返回和能力都是一样的  |
 | gpt-5.4-mini-ca | 0.003 / 1K Tokens| 0.018 / 1K Tokens | 支持 | 第三方优质提供商提供的服务,优点价格便宜,但是稳定性没有非-ca的好, 模型返回和能力都是一样的  |
 | gpt-5.4-nano-ca | 0.0008 / 1K Tokens | 0.005 / 1K Tokens | 支持 | 第三方优质提供商提供的服务,优点价格便宜,但是稳定性没有非-ca的好, 模型返回和能力都是一样的  |
 | gpt-5-codex-ca | 0.005 / 1K Tokens | 0.04  / 1K Tokens | 支持 | 支持在codex中使用第三方优质提供商提供的服务,优点价格便宜,但是稳定性没有非-ca的好, 模型返回和能力都是一样的 |
@@ -159,6 +159,7 @@
 | deepseek-r1-250528 | 0.0024  / 1K Tokens | 0.0096 / 1K Tokens | 支持 |deepseek的思考R1模型, 此模型由第三方供应商提供，有小概率可能会出现响应速度较慢或报错的情况。|
 | deepseek-v3 | 0.0012  / 1K Tokens | 0.0048 / 1K Tokens | 支持 |deepseek的聊天模型, 此模型由第三方供应商提供，有小概率可能会出现响应速度较慢或报错的情况。|
 | deepseek-chat |  0.0012  / 1K Tokens | 0.0018 / 1K Tokens | 支持 |deepseek的聊天模型, 此模型由第三方供应商提供，有小概率可能会出现响应速度较慢或报错的情况。|
+| claude-opus-4-7 | 0.025 / 1K Tokens | 0.125 / 1K Tokens | 支持 |claude的模型, 此模型由第三方供应商提供，有小概率可能会出现响应速度较慢或报错的情况。|
 | claude-sonnet-4-6 | 0.015 / 1K Tokens | 0.075 / 1K Tokens | 支持 |claude的模型, 此模型由第三方供应商提供，现在使用的为Claude code的逆向或官方逆向的渠道。|
 | claude-sonnet-4-6-thinking | 0.015 / 1K Tokens | 0.075 | 支持 |claude的模型, 此模型由第三方供应商提供，有小概率可能会出现响应速度较慢或报错的情况。|
 | claude-opus-4-6 | 0.025 / 1K Tokens | 0.125 / 1K Tokens | 支持 |claude的模型, 此模型由第三方供应商提供，有小概率可能会出现响应速度较慢或报错的情况。|
@@ -193,10 +194,6 @@
 | qwen3-coder-plus | 0.0028 / 1K Tokens | 0.0112 / 1K Tokens | 支持 | qwen的开源模型, 此模型由第三方供应商提供，有小概率可能会出现响应速度较慢或报错的情况。|
 | qwen3-coder-480b-a35b-instruct | 0.0042 / 1K Tokens | 0.0168 / 1K Tokens | 支持 | qwen的开源模型, 此模型由第三方供应商提供，有小概率可能会出现响应速度较慢或报错的情况。|
 | kimi-k2.5 | 0.0028 / 1K Tokens | 0.0147 / 1K Tokens | 支持 | kimi的模型, 此模型由第三方供应商提供，有小概率可能会出现响应速度较慢或报错的情况。|
-| kimi-k2-0711-preview | 0.0028 / 1K Tokens | 0.0112 / 1K Tokens | 支持 | kimi的模型, 此模型由第三方供应商提供，有小概率可能会出现响应速度较慢或报错的情况。|
-| kimi-k2-0905-preview | 0.0028 / 1K Tokens | 0.0112 / 1K Tokens | 支持 | kimi的模型, 此模型由第三方供应商提供，有小概率可能会出现响应速度较慢或报错的情况。|
-| kimi-k2-thinking | 0.0028 / 1K Tokens | 0.0112 / 1K Tokens | 支持 | kimi的模型, 此模型由第三方供应商提供，有小概率可能会出现响应速度较慢或报错的情况。|
-| kimi-k2-thinking-turbo | 0.0056 / 1K Tokens | 0.0406 / 1K Tokens | 支持 | kimi的模型, 此模型由第三方供应商提供，有小概率可能会出现响应速度较慢或报错的情况。|
 | glm-4.7 | 0.0024 / 1K Tokens | 0.0096 / 1K Tokens | 支持 | glm的模型, 此模型由第三方供应商提供，有小概率可能会出现响应速度较慢或报错的情况。|
 | glm-5 | 0.0024 / 1K Tokens [7阶梯计价]| 0.0108 / 1K Tokens | 支持 | glm模型, 此模型由第三方供应商提供，有小概率可能会出现响应速度较慢或报错的情况。|
 | minimax-m2.1 | 0.00126 / 1K Tokens | 0.00504 / 1K Tokens | 支持 | minimax的模型, 此模型由第三方供应商提供，有小概率可能会出现响应速度较慢或报错的情况。|
@@ -205,6 +202,8 @@
 
 | **模型（Model）** | **价格** | **是否支持** |
 | --- | --- | --- |
+| gpt-image-2 | 文字输入: 0.035CA/1K Tokens, 图片输入: 0.07CA/1K Tokens, 图片输出：0.21 CA/1K Tokens | 不支持 |
+| gpt-image-2-ca | 0.4ca一张图, CA 版的Image为逆向模型，使用时建议尽量编写清晰、完整的 Prompt。为了更容易触发绘图，建议在提示词中加入类似“画一个 xxxx”这样的表述。 | 支持 |
 | gpt-image-1.5 | 文字输入: 0.035CA/1K Tokens, 图片输入: 0.07CA/1K Tokens, 图片输出：0.224 CA/1K Tokens | 支持 |
 | gpt-image-1 | 文字输入: 0.04CA/1K Tokens, 图片输入: 0.08CA/1K Tokens, 图片输出：0.32 CA/1K Tokens | 支持 |
 | gpt-image-1-mini | 文字输入: 0.014CA/1K Tokens, 图片输入: 0.0175CA/1K Tokens, 图片输出：0.056 CA/1K Tokens | 支持 |
@@ -224,7 +223,6 @@
 | text-embedding-ada-002 | 0.0007 / 1K Tokens | 支持 |
 | text-embedding-3-small | 0.00014 / 1K Tokens | 支持 |
 | text-embedding-3-large | 0.00091 / 1K Tokens | 支持 |
-| deepseek-ocr | 0.08 /一次 | 支持 |
 
 [OpenAi官方价格文档](https://openai.com/api/pricing/)
 
@@ -247,6 +245,18 @@
 此费用为官方收费，非我们额外收费。
 
 [7] 阶梯计价
+> **gpt-5.5**
+> | 输入范围 | 输入价格 | 输出价格 |
+> |---------|---------|---------|
+> | 0 - 272K | 0.035  CA/1K Tokens | 0.21  CA/1K Tokens |
+> | > 272K | 0.07 CA/1K Tokens | 0.315 CA/1K Tokens |
+
+> **gpt-5.5-ca**
+> | 输入范围 | 输入价格 | 输出价格 |
+> |---------|---------|---------|
+> | 0 - 272K | 0.02 CA/1K Tokens | 0.12 CA/1K Tokens |
+> | > 272K | 0.04 CA/1K Tokens | 0.18 CA/1K Tokens |
+
 > **gpt-5.4**
 > | 输入范围 | 输入价格 | 输出价格 |
 > |---------|---------|---------|
@@ -279,12 +289,19 @@
 > | 0 - 128K | 0.00084 CA/1K Tokens | 0.00504 CA/1K Tokens |
 > | > 128K | 0.0021 CA/1K Tokens | 0.0126 CA/1K Tokens |
 
+> **qwen3.5-plus**
+> | 输入范围 | 输入价格 | 输出价格 |
+> |---------|---------|---------|
+> | 0 - 128K | 0.00056 CA/1K Tokens | 0.00336 CA/1K Tokens |
+> | 128K - 256K | 0.0014 CA/1K Tokens | 0.0084 CA/1K Tokens |
+> |> 256K | 0.0028 CA/1K Tokens | 0.0168 CA/1K Tokens |
 
 > **glm-5**
 >| 输入范围 | 输入价格 | 输出价格 |
 >|---------|---------|---------|
 >| 0 - 32K | 0.0024 CA/1K Tokens | 0.0108 CA/1K Tokens |
 >| >32K| 0.0036 CA/1K Tokens | 0.0132 CA/1K Tokens |
+
 
 
 ## 如何使用
@@ -296,135 +313,10 @@
 - 转发API无法直接向官方接口api.openai.com发起请求，需要将请求地址改为api.chatanywhere.tech才可以使用，大部分插件和软件都可以修改。
 - 遇到问题可以前往[ChatAnywhere Status](https://status.chatanywhere.tech/)查看接口可用性。
 
-## 常见软件/插件使用方法
+## 常见软件使用方法
 
-### **python openai官方库（使用langchain等）**
-示例代码请参考[demo.py](./demo.py)或[OpenAI官方文档](https://platform.openai.com/docs/guides/text-generation)
+[文档-常用软件使用教程](https://chatanywhere.apifox.cn/doc-5547696)
 
-***方法一***
-
-```python
-from openai import OpenAI
-
-client = OpenAI(
-    # defaults to os.environ.get("OPENAI_API_KEY")
-    api_key="YOUR API KEY",
-    base_url="https://api.chatanywhere.tech/v1"
-    # base_url="https://api.chatanywhere.org/v1"
-)
-```
-
-***方法二（方法一不起作用用这个）***
-
-修改环境变量OPENAI_API_BASE，各个系统怎么改环境变量请自行搜索，修改环境变量后不起作用请重启系统。
-```bash
-OPENAI_API_BASE=https://api.chatanywhere.tech/v1
-或 OPENAI_API_BASE=https://api.chatanywhere.org/v1
-```
-### **开源gpt_academic**
-找到`config.py`文件中的`API_URL_REDIRECT`配置并修改为以下内容：
-```python
-API_URL_REDIRECT = {"https://api.openai.com/v1/chat/completions": "https://api.chatanywhere.tech/v1/chat/completions"}
-# API_URL_REDIRECT = {"https://api.openai.com/v1/chat/completions": "https://api.chatanywhere.org/v1/chat/completions"}
-```
-### **Gomoon （支持读文件，构建知识库，推荐使用）**
-Gomoon 是一款开源的桌面大模型应用，支持mac和Windows平台。额外支持了解析文件、图片，本地知识库等能力。
-
-官网地址：https://gomoon.top
-
-GitHub地址：https://github.com/wizardAEI/Gomoon
-
-使用方法：进入Gomoon设置页面(页面右上角)，如图在设置中填入密钥，并将代理设置为`https://api.chatanywhere.tech/v1`
-
-![](images/gomoon.png)
-
-### **Zotero插件zotero-gpt**
-
-支持AI阅读论文，科研神器。
-
-下载链接：https://github.com/MuiseDestiny/zotero-gpt/releases (下载最新版本的zotero-gpt.xpi文件)
-
-**Zotero7使用方法（建议使用Zotero7）**
-
-1. 安装插件
-
-在下载链接下载好插件后（zotero7应该下载1.0以上版本的插件），点击zotero左上角 工具->插件
-
-点击Install Plugin From File
-
-![](images/zotero7-gpt1.png)
-
-找到你下载的zotero-gpt.xpi安装
-
-2. 配置插件
-
-点击zotero左上角 编辑->设置
-
-然后如图设置即可
-
-![](images/zotero7-gpt2.png)
-
-**Zotero6使用方法**
-
-安装好插件后使用以下命令设置
-```
-/api https://api.chatanywhere.tech
-
-/secretKey 购买的转发key 记住别忘记带sk-
-
-# 切换模型命令
-/model gpt-3.5-turbo-0125 
-```
-
-![](images/zotero-gpt.png)
-
-
-### **Zotero翻译插件zotero-pdf-translate**
-
-下载链接：https://github.com/windingwind/zotero-pdf-translate/releases
-
-接口地址填写: https://api.chatanywhere.tech/v1/chat/completions
-
-不用管状态是否显示可用 填上之后就可以了
-
-![](images/zotero-pdf-translate.png)
-
-
-### **BotGem(AMA)**
-
-ChatGPT桌面应用，支持全平台，***支持gpt-4-vision***。
-
-下载链接：https://bytemyth.com/ama
-
-使用方法：下载安装后在设置中如图设置，并点击更新。
-
-![](images/botgem.png)
-
-### **ChatBox**
-
-ChatGPT开源桌面应用，支持全部桌面平台。
-
-下载链接：https://github.com/Bin-Huang/chatbox/releases
-
-使用方法：如图在设置中填入购买的密钥，并将代理设置为`https://api.chatanywhere.tech`即可
-
-![](images/chatbox.png)
-
-### **浏览器插件ChatGPT Sidebar**
-
-官网链接：https://chatgpt-sidebar.com/
-
-安装好插件后进入设置页面，如图所示修改设置，将url修改为 `https://api.chatanywhere.tech` 。
-
-![](images/sidebar.png)
-
-### **Jetbrains插件ChatGPT - Easycode**
-<img src="./images/jet1.png" width='200'/>
-
-安装好插件后在Settings > Tools > OpenAI > GPT 3.5 Turbo中如图所示配置好插件，重点要将Server Settings 修改为 `https://api.chatanywhere.tech/v1/chat/completions` 。并勾选Customize Server。
-
-![](images/jet2.png)
-
-
+## Star History
 
 [![Star History Chart](https://api.star-history.com/svg?repos=chatanywhere/GPT_API_free&type=Date)](https://www.star-history.com/#chatanywhere/GPT_API_free&Date)
